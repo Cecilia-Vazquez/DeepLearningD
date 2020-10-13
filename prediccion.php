@@ -36,24 +36,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Lunares"> Lunares </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#BM"> ¿Benigno o maligno? </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#M"> Melanoma </a>
-      </li>
-      <br>
-      <li class="nav-item">
-        <a class="nav-link" href="#NP"> Nuestro proyecto </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="prediccion.php">¿Predicción? </a>
-      </li>
+      
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
@@ -61,9 +46,7 @@
     </form>
   </div>
 </nav>
-
-<div class="card border-info rounded-0">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -102,91 +85,60 @@
   </a>
 </div>
 
-     
-     </div>
+          
     <div class="container-xl" style="background-color:#eff4ff;">
     <br>
 
-   
     <div class="row justify-content-center">
     <div class="col-md-12">
-           
-     <br>
-<br>
-<div class="card text-center " id="Lunares"  >
-  <div class="card-header text-center navbar-dark" style=" background:#98FB98">
-  <strong>¿Qué son los los Nevos Melanocíticos o Lunares?</strong>
-  </div>
-  <div class="card-body text-justify">
-    <h5 class="card-title">Los lunares son crecimientos sobre la piel.  <br>Se producen cuando las células productoras de pigmento de la piel, llamadas melanocitos, crecen en grupos. <br> Los lunares son muy comunes. La mayoría de las personas tiene entre 10 y 40 lunares. <br> Una persona puede desarrollar nuevos lunares hasta los 40 años aproximadamente. <br>Suelen ir desapareciendo a medida que envejecemos.</h5>
-   
-   
-  </div>
-</div>
-<br>
-<div class="card text-center " id="BM">
-  <div class="card-header" style=" background: 	#FFE4E1">
-  <strong>¿Cuál es la diferencia entre lunares benignos y malignos?</strong>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title text-justify"> Según la Sociedad Canadiense del Cáncer, los médicos siguen la regla ABCDE para diferenciar un lunar normal del cáncer de piel. <br> Esta regla incluye características como la asimetría, la irregularidad del borde, el color, el tamaño y la evolución de un lunar.</h5>
-     
-    <img src="img/abcd.png" class="img-fluid col-12" alt="Responsive image">
-   
-  </div>
-
-  <br>
-  
-
-    
-        </div>
-        <br>
-      
-        <div class="card text-center  " id="M" >
-  <div class="card-header text-center  " style=" background:#FFDEAD">
-  <strong>Melanoma</strong>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title text-justify  "> <li>Tumor más maligno de la piel</li>
-<li>Tiene la gran capacidad de producir metástasis </li> <br>
-Primer signo de melanoma es:
-<li>Cambio de tamaño, color o textura de un lunar </li>
-<li>La mayoría tienen un área negra o negra azulada.</li>
-</h5>
-     
-    <img src="img/ima.jfif" class="img-responsive col-6" alt="Responsive image">
-   
-  </div>
-<br>
-
-</div>
-<br><br>
-
-    
-<div class="card text-center  " id="NP" >
+    <div class="card text-center  " id="NP" >
   <div class="card-header text-center  " style=" background:#4169E1">
-  <strong>Nuestro proyecto</strong>
+  <strong>¿Te gustaria obtener una predicción?</strong>
   </div>
   <div class="card-body">
-    <h5 class="card-title text-justify  "> “Identificar, clasificar y predecir  si un lunar 
-    cutáneo es benigno o maligno mediante el uso de redes neuronales con el objetivo de proporcionar 
-    una herramienta de soporte para la detección temprana de patologías asociadas a la piel”
+    <h5 class="card-title text-justify  "> Envianos tu fotografia y con ella podremos identificar, clasificar y predecir  si tu lunar 
+  es benigno o maligno mediante el uso de redes neuronales con el objetivo de proporcionar 
+    una herramienta de soporte para la detección de alguna patologia maligna en tu piel.
 
 </h5> <br>
-<strong>Metodología</strong>
-     
-    <img src="img/img2.png" class="img-responsive" alt="Responsive image">
+<strong>¡Envianos la fotografia de tu lunar!</strong>
+<br>
+<br>
+<div class="container">
+
+<div class="row justify-content-center ">
+    <div class="col-md-8">
+<div class="card text-center border-success   " id="Lunares"   >
+  <div class="card-header text-center " style=" background: #32CD32">
+  <strong>Registro</strong>
+  </div>
+  <div class="card-body text-justify">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo@gmail.com">
+    <small id="emailHelp" class="form-text text-muted">Ingresa tu email para enviarte los resultados de tu predicción</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Carga tu fotografia</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+ 
+  <button type="submit" class="btn  btn-block btn-primary">Enviar</button>
+</form>
+   </div>
+   </div>
    
+  </div>
+</div>
+</div>
+
+  
   </div>
 <br>
 
 </div>
-
-
-
-<br><br>
-    </div><br><br><br>
-
+</div>
 
 </div>
     
